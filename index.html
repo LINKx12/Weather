@@ -620,5 +620,10 @@ document.getElementById('city-input').addEventListener('keydown',e=>{if(e.key===
 
 load(lat,lon,city,region);
 </script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
+</script>
 </body>
 </html>
